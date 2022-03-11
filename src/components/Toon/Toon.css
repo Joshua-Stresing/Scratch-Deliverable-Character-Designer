@@ -1,4 +1,4 @@
-main {
+Toon {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -6,4 +6,28 @@ main {
   height: 640px;
   align-content: flex-start;
   position: relative;
+}
+
+.head-display {
+  height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.middle-display {
+  height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom-display {
+  height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Main.css';
-import background from '../../background.png';
-
-
+import logo192 from './logo192.png';
+import Toon from '../Toon/Toon.js';
+import Picker from '../Picker/Picker.js';
 export default function Main() {
 
   //set up the const i want
@@ -10,21 +10,24 @@ export default function Main() {
   const [middle, setMiddle] = useState('blue');
   const [bottom, setBottom] = useState('leg');
 
-  //Counter?
-  const [headCount, setHeadCount] = useState(0);
-  const [middleCount, setMiddleCount] = useState(0);
-  const [bottomCount, setBottomCount] = useState(0);
+//   //Counter?
+//   const [headCount, setHeadCount] = useState(0);
+//   const [middleCount, setMiddleCount] = useState(0);
+//   const [bottomCount, setBottomCount] = useState(0);
 
-//and catchphrase?
-  const [catchphrase, setCatchPhrase] = useState('');
+// //and catchphrase?
+//   const [catchphrase, setCatchPhrase] = useState('');
+//   const [catchphraseArray, setCatchphraseArray] = useState('');
 
   return (
-    <main style={{ backgroundImage: `url(${background})` }}>
-      <div>
-        <Toon{...{head, middle, bottom}}
-      </div>
-      <div>
+    <main style={{ backgroundImage: `url(${logo192})` }}>
 
+      <div>
+        <Toon {...{ head, middle, bottom }}/>
+      </div>
+
+      <div>
+        <Picker {...{ head, middle, bottom, setHead, setMiddle, setBottom }}/>
       </div>
 
     </main>

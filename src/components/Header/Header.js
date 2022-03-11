@@ -3,5 +3,5 @@ import './Header.css';
 
 // Set up a header
 export default function Header() {
-  return <header>Build a Toon</header>;
+  return (<header>Build a Toon</header>);
 }
