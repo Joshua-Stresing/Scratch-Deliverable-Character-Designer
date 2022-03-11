@@ -1,7 +1,7 @@
 import React from 'react';
 
 //example
-export default function Object() {
+export default function Picker() {
   return ( 
     <div>
     </div>);
