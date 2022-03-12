@@ -20,7 +20,7 @@ export default function Main() {
 
 //and catchphrase?
   const [slogan, setSlogan] = useState('');
-  const [sloganArray, setSloganArray] = useState('');
+  const [sloganArray, setSloganArray] = useState(['Slogans']);
 
   return (
     <main style={{ backgroundImage: `url(${logo192})` }}>
