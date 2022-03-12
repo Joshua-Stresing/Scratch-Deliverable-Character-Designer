@@ -3,6 +3,7 @@ import './Picker.css';
 //example display
 
 export default function Picker({
+  
   head,
   setHead,
   middle,

@@ -3,6 +3,9 @@ import './Main.css';
 import logo192 from './logo192.png';
 import Toon from '../Toon/Toon.js';
 import Picker from '../Picker/Picker.js';
+import Slogan from '../Slogan/Slogan.js';
+
+
 export default function Main() {
 
   //set up the const i want
@@ -15,9 +18,9 @@ export default function Main() {
 //   const [middleCount, setMiddleCount] = useState(0);
 //   const [bottomCount, setBottomCount] = useState(0);
 
-// //and catchphrase?
-//   const [catchphrase, setCatchPhrase] = useState('');
-//   const [catchphraseArray, setCatchphraseArray] = useState('');
+//and catchphrase?
+  const [slogan, setSlogan] = useState('');
+  const [sloganArray, setSloganArray] = useState('');
 
   return (
     <main style={{ backgroundImage: `url(${logo192})` }}>
@@ -28,6 +31,10 @@ export default function Main() {
 
       <div>
         <Picker {...{ head, middle, bottom, setHead, setMiddle, setBottom }}/>
+      </div>
+
+      <div>
+        <Slogan {...{ slogan, setSlogan, sloganArray, setSloganArray }}/>
       </div>
 
     </main>
